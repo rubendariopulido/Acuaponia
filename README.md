@@ -78,3 +78,128 @@ Información adicional
 Ayuda y soporte técnico
 ¿Le ayudó este documento?
 Directiva de privacidad
+
+
+KnowFlow - an open source river quality meter with Arduino
+
+KnowFlow is an open source water monitoring device and an education program.
+
+For the device part, KnowFlow is designed for environmental activists, researchers, students... anyone who wants to know the water quality using low cost and customized tools. It is based on arduino uno and can currently monitor 5 parameters: Temperature, pH, ORP, Electrical conductivity and Dissolved Oxygen. The data is stored on a micro SD card and can be read directly on phone by bluetooth (except for Dissolved Oxygen). All the modules are easy to change or add. Most of the sensors used are from DFRobot and Atlas Scientific, the main 2 sensor suppliers for Arduino users.
+
+For the education program, KnowFlow is an 8 week online course and a learning group hosted on Greenseed Project platform. During the course, we cover the fundamentals of water quality, indicators of water quality, Arduino and monitoring systems and show you how to build your own monitoring system based on Arduino. In addition to the 5 included in the KnowFlow kits, you can add other environmental sensors, such as carbon dioxide, ozone, dust, light, temperature, or humidity sensors, then add GPS and a communication module to connect data from a distance. Step by step demos in the course walk you through the learning process.
+
+This page is a collective information for KnowFlow, it can also be found on github, Youku. Will release this series video tutorial on youtube later soon!
+KnowFlow Hardware
+
+A complete list of components, measurements, drawings, and other specifications can be found here. DFRobot also offers a KnowFlow starter kit.
+Central Control Unit:
+
+    Arduino Uno (DFRobot Bluno in this case) and
+    Expansion Shield (DFRobot Expansion Shield V7.1 in this case)
+    real time clock circuit board
+
+Water Sensors:
+
+    pH (pH probe and pH circuit board)
+    EC (EC probe and EC circuit board)
+    ORP (ORP probe and ORP circuit board)
+    Temperature (temperature probe and temperature circuit board)
+    Dissolved Oxygen (DO probe, BNC and circuit board)
+
+Data Storage:
+
+    Micro-SD module
+    Micro SD card
+
+Fit and finish:
+
+    Mounting plate
+    Water proof box(200mm_150mm_75mm)
+    Water proof bushing
+
+Other parts:
+
+    Wires
+    Bread board
+    Bolts and nuts
+    Screws
+    Battery
+    Double-sided adhesive
+    Write on tape
+    Basic hand tools
+    Spiral cable wrap
+
+Installing KnowFlow Firmware
+
+KnowFlow is designed for beginners. You don’t need to have experience with Arduino or software development. KnowFlow is packaged wtth supporting software libraries to make it easier for you to enable different sensor features for your application. Feel free to post your software questions on our wiki page on public lab or github.
+
+    Download Arduino IDE
+    Download Knowflow code from github
+    Open "WaterMonitor.ino" from the downloaded file with Arduino IDE
+    Connect your Arduino Uno board
+    Select Tools>Board: Arduino Uno and Tools>Ports: /dev/cu.usb...
+    Click "Verify" then "Upload" the software to your board.
+
+FAQ
+
+Why can't I verify the code.
+The IDE may be missing a library, most often OneWire. Install the missing library library from Sketch->include library->manage libraries. Search "OneWire" then install it.
+FAQ
+
+    Q:why I can't not verify the code. A:Some user may not verify the code. It's maybe the IDE lack of some library, the most possiable is OneWire. Please find library OneWire in Sketch->include library->manage libraries, searth OneWire then install it. It should be solve the problem.
+
+How to build KnowFlow
+
+Instructions are available here.
+How to contribute:
+
+See this tutorial.
+
+    Fork the repository!
+    Create your feature branch: git checkout -b my-new-feature
+    Commit your changes: git commit -am 'Add some feature'
+    Push to the branch: git push origin my-new-feature
+    Submit a pull request
+
+About Branches
+
+master is the current stable release.
+
+development is the research version. It has experimental features that are not fully tested. For example, IOT integrations, new sensors, etc.
+
+test is for the team to practice with github. We will delete when we figure out how to use github. (We are newbees to github, so please forgive any stupid errors. Suggestions are welcome!) :)
+To DO List
+
+    support DO Senser from DFRobot.
+    add youtube video tutorial.
+    Website setup. www.knowflow.org
+    Modify the construction of the files system.
+    IOT feature.
+    Calibration function
+    Low power function
+
+Contact
+
+Email addresses for the KnowFlow team.
+
+    Rockets Rockets.xia@dfrobot.com
+    He Shan shanh0510@gmail.com
+    Lauren Lauren.pan@hotmail.com
+    Jason jason.liang@dfrobot.com
+
+Documents
+
+    Tutorial
+    GreenSeed online courses
+    Application:非洲茶园水质调研
+    Application:Willow Creek Water Quality Monitoring
+    KnowFlow Special Design
+
+License
+
+All KnowFlow related materials are released under the Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+This project has benefited from the support from the following funders:
+
+    GreenSeed Foundation
+    Mushroom Cloud Maker Space
+
